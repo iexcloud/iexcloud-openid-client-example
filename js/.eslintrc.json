@@ -1,0 +1,106 @@
+{
+  "parser": "espree",
+  "extends": [
+    "eslint-config-airbnb-base/rules/best-practices",
+    "eslint-config-airbnb-base/rules/errors",
+    "eslint-config-airbnb-base/rules/node",
+    "eslint-config-airbnb-base/rules/style",
+    "eslint-config-airbnb-base/rules/variables",
+    "eslint-config-airbnb-base/rules/strict",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "json",
+    "prettier",
+    "promise",
+    "node"
+  ],
+  "env": {
+    "commonjs": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "ecmaFeatures": {
+      "globalReturn": true
+    },
+    "experimentalObjectRestSpread": true
+  },
+  "globals": {
+    "appRequire": true,
+    "Promise": true
+  },
+  "overrides": [
+    {
+      "files": ["test/**/*.js"],
+      "rules": {
+        "max-len": [
+          "warn",
+          {
+            "code": 200,
+            "comments": 200,
+            "ignoreTrailingComments": true
+          }
+        ]
+      }
+    }
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "bracketSpacing": false,
+        "printWidth": 200,
+        "tabWidth": 2,
+        "useTabs": false
+      }
+    ],
+    
+    "array-callback-return": "off",
+    "block-scoped-var": "warn",
+    "class-methods-use-this": "off",
+    "consistent-return": "warn",
+    "default-case": "warn",
+    "eqeqeq": "warn",
+    "global-require": "off",
+    "guard-for-in": "warn",
+    "new-cap": "off",
+    "no-await-in-loop": "off",
+    "no-case-declarations": "warn",
+    "no-console": "warn",
+    "no-continue": "off",
+    "no-dupe-keys": "warn",
+    "no-empty": "warn",
+    "no-multi-assign": "off",
+    "no-new-func": "warn",
+    "no-param-reassign": "off",
+    "no-plusplus": "off",
+    "no-redeclare": "warn",
+    "no-restricted-syntax": "off",
+    "no-shadow": "warn",
+    "no-undef": "error",
+    "no-underscore-dangle": "warn",
+    "no-unused-vars": "warn",
+    "no-unreachable": "warn",
+    "no-use-before-define": "off",
+    "no-useless-escape": "warn",
+    "no-unused-expressions": "warn",
+    "no-var": "warn",
+    "prefer-const": "warn",
+    "prefer-destructuring": "warn",
+    "space-infix-ops": "error",
+    "vars-on-top": "warn",
+    
+    "strict": ["error", "global"],
+    
+    "node/handle-callback-err": ["warn", "^(err|error)$"],
+    "node/no-callback-literal": "error",
+    "node/no-deprecated-api": "warn",
+    "node/no-exports-assign": "error",
+    "node/no-new-require": "error",
+    "node/no-path-concat": "error",
+    "node/process-exit-as-throw": "error",
+    
+    "promise/param-names": "error"
+  }
+}
