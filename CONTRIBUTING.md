@@ -4,7 +4,7 @@ Thank you for your interest in contributing to this library!
 
 We invite you to contribute enhancements. Upon review you will be required to complete the [Contributor License Agreement (CLA)](https://github.com/iex/cla) before we are able to merge.
 
-If you have any questions about the contribution process, please feel free to send an email to [open_source@iexcloud.io](mailto:open_source@iexcloud.io).
+If you have any questions about the contribution process, please feel free to send an email to [dev@iexcloud.io](mailto:dev@iexcloud.io).
 
 
 ## Reporting bugs, feature requests, etc.
