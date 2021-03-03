@@ -36,4 +36,4 @@ If you want to help resolve an issue by making some changes that are larger than
 - If you add new code, preferably write one or more tests for checking that your code works as expected.
 - Commit your changes and publish the branch to your github repo.
 - Open a pull-request (PR) back to the main repo on Github.
-- 
+
