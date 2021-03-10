@@ -22,7 +22,7 @@
         "express-openid-connect": "^2.2.1",
         "express-ws": "^4.0.0",
         "openid-client": "^4.2.3",
-        "pug": "^3.0.0"
+        "pug": "^3.0.1"
     },
     "devDependencies": {
         "@babel/core": "^7.12.10",
